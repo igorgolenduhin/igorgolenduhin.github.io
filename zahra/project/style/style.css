@@ -1,0 +1,147 @@
+
+/* breeds */
+
+.breeds_title
+{   
+    font-size:1.5em;
+    color: rgb(247, 180, 57);
+}
+.available
+{
+    font-size: 1.3em;
+    color:#9f9797;
+}
+.available img
+{
+   width:24px;
+   padding-left: 4px;
+}
+
+
+/* training */
+
+main #benefits
+{
+    width: 100%;
+}
+main #benefits img#training3
+{
+    width: 30%;
+}
+main #benefits ul
+{
+    width: 90%;
+}
+main #benefits ul li
+{
+   padding-bottom: 2em;
+}
+main #benefits ul li b
+{
+   color: orange;
+}
+main #benefits img#trainer
+{
+    width: 25%;
+    float: right;
+}
+main #benefits #trainer-recommended
+{
+    font-size: 2em;
+    padding-top: 11%;
+    width: 70%;
+    margin: 0 0 0 2%;
+}
+main #benefits p#trainer-description
+{
+    float: left;
+    background-color: rgb(255, 189, 47);
+    clear: both;
+    padding: 50px;
+}
+main #benefits ul#trainer-list {
+    width: 95%;
+    height: 100%;
+    list-style-type: none;
+    padding: 20px 0 0 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main #benefits ul#trainer-list  li
+  {
+    overflow: hidden;
+    width: 24%;
+    height: 500px;
+    margin: auto;
+  }
+
+
+  /* animal care */
+  #animalcare-description 
+  {
+      clear: both;;
+      width: 95%;
+      height: 350px;
+      margin: auto;
+  }
+  #animalcare-description img
+  {
+      float:right;
+      width: 50%;
+      margin: 5px 0px;
+  }
+  #animalcare-description p
+  {
+      float:left;
+      width: 45%;
+      margin: 1em 0.5em 0 0;
+  }
+  #animalcare-list-description
+  {
+      padding-top: 1em;;
+      clear: both;
+      width: 95%;
+      margin: auto;
+  }
+  #animalcare-list li{
+    padding-bottom: 1em; 
+  }
+  #animalcare-links h2{
+text-align: center;;
+  }
+
+  @media only screen and (max-width: 900px) {
+    #animalcare-description img
+    {
+        width: 100%;
+    }
+    #animalcare-description p
+    {
+        width: 100%;
+        padding-top: 1em;
+    }
+    #animalcare-links .column
+    {
+        padding-top: 2em;
+    }
+    #topbtn{
+        display: none;
+    }
+}
+
+  /* all pages */
+#topbtn{
+    display: none;    
+    padding: 15px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: 9f9797d;
+    color: white;
+    cursor: pointer;
+}

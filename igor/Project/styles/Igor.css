@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Enriqueta&display=swap');
+
+body{
+    font-family: 'Mansalva', cursive;
+    margin: 0%;
+    padding: 0%;
+}
+#wrapper {
+    color: #000000;
+    margin: 0 auto;
+    background-color: white;
+}
+header{
+display: block;
+margin: 2%;
+}
+.header-column{
+    padding-bottom: 2.5%;
+}
+.headerSearch{
+    font-family: 'Enriqueta', serif;
+    border: 1px solid rgb(247, 180, 57);
+    font-size: 100%;
+    color: black;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+nav a:link{
+    color: black;
+}
+nav a:visited{
+    color:rgb(255, 95, 47);
+}
+nav a:hover{
+    color: rgb(117, 86, 20);
+}
+p a, #btnIW, #btnJW, #btnHW, #btnZW {
+    text-decoration: none;
+    display: block;
+    font-size: 100%;
+}
+p a:link, #btnIW:link, #btnJW:link, #btnHW:link, #btnZW:link{
+    color: rgb(255, 189, 47);
+
+}
+p a:visited, #btnIW:visited, #btnJW:visited, #btnHW:visited, #btnZW:visited{
+    color: rgb(255, 95, 47);
+}
+p a:hover, #btnIW:hover, #btnJW:hover, #btnHW:hover, #btnZW:hover{
+    color:rgba(18, 230, 18, 0.863);
+}
+.petbyus-logo{
+    width: 270px;
+}
+.header-column img:hover{
+    width: 290px;
+}
+.banner{
+    clear: both;
+}
+.banner img{
+    width: 100%;
+}
+nav{
+    flex-direction: row;
+    clear: both;  
+}
+.nav{
+    position: fixed;
+    top: 0;
+    width:96%;
+    height: 150px;
+    z-index: 100;
+    transition: all .2s ease-in-out;
+    transform: translateY(-150px);
+}
+.hidden {
+    transform: translateY(0px);
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgb(247, 180, 57);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+nav li{
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    margin:auto;
+}
+nav li a{
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+}
+nav li:hover .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+.submenu li {
+    display: block;
+}
+.submenu li a {
+    text-align: center;
+    display: block;
+}
+main{
+    margin: 2%;
+}
+.beginning{
+    grid-template: repeat(1, 25% 70% ) / repeat(1, 1fr);
+    display: grid;
+    grid-gap: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.beginningAbout{
+    grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+    display: grid;
+    grid-gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.beginningAdoption{
+    grid-template: repeat(1, 25% 70%) / repeat(1, 1fr);
+    display: grid;
+    grid-gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.beginning h2{
+    justify-self: center;
+    align-self: center;
+}
+h2 {
+    text-align: center;
+}
+.beginning p{
+    font-size: 120%;
+    font-family: 'Enriqueta', serif;
+    justify-self: center;
+    align-self: center;
+    margin: 0% 4% 0% 4%;
+}
+.beginning p a:link, :visited{
+    color: rgb(255, 189, 47);
+}
+.beginning p a{
+    display: contents;
+}
+.reason1{
+    grid-template: repeat(1, 10% 29% 59%) / repeat(1, 1fr);
+    display: grid;
+    grid-gap: 2%;
+    padding-bottom: 5%;
+    margin: 0% 4% 0% 4%;
+}
+.reason1 h2{
+    justify-self: center;
+    align-self: center;
+}
+.insideR1 p{
+    font-family: 'Enriqueta', serif;
+    justify-self: center;
+    align-self: center;
+}
+.insideR1 img{
+    width: 100%;
+}
+.reason2{
+    grid-template: repeat(1, 10% 29% 59%) / repeat(1, 1fr);
+    display: grid;
+    grid-gap: 2%;
+    padding-bottom: 5%;
+    margin: 0% 4% 0% 4%;
+}
+.reason2 h2{
+    justify-self: center;
+    align-self: center;
+}
+.insideR2 p{
+    font-family: 'Enriqueta', serif;
+    justify-self: center;
+    align-self: center;
+}
+.insideR2 img{
+    width: 100%;
+}
+.card{
+    position:relative;
+    min-height:1px;
+}
+.boldText{
+    font-family: 'Enriqueta', serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+.cardMain{
+    background: #ffffff;
+    position: relative;
+    font-size: 120%;
+}
+
+.h3Header{
+    text-align: center;
+    font-size: 150%;
+    background-color: rgb(247, 180, 57);
+    border-radius: 2em;
+}
+.h3Header h3{
+    color: black;
+    font-family: 'Mansalva', cursive;
+    font-size: 80%;
+}
+.ourimg{ 
+    width: 140px;
+    height: 140px;
+}
+.ourimgContact{ 
+    width: 100%;
+}
+.example1 h3{
+    text-align: center;
+    margin: 3% 0% 3% 0%;
+}
+.example1 img{
+    width: 80%;
+    border-radius: 2em;
+    margin: 0% 10%;
+}
+.example1 p{
+    font-family: 'Enriqueta', serif;
+    justify-self: center;
+    margin: 2% 10%;
+    font-size: 90%;
+} 
+.button1{
+    border-radius: 2em;
+    background-color: rgba(18, 230, 18, 0.863);
+    border: 1px solid rgba(13, 243, 13, 0.918);
+    font-family: 'Mansalva', cursive;
+    font-size: 120%;
+    width: 90%;
+    margin: 0% 5%;
+}
+.button1:hover{
+    background-color: #075e54;
+    border: 1px solid #075e54;
+    color:white;
+}
+#scrollUp {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    cursor: pointer;
+    color: grey;
+}
+footer{
+    font-family: 'Mansalva', cursive;
+    font-size: 100%;
+    font-weight: bold;
+    background-color:  rgb(255, 189, 47);
+}
+footer p a:link{
+    color: rgb(255, 95, 47);
+}
+.fa:hover{
+    color: black;
+    margin-top: 0;
+}
+.fa-instagram{
+    color: #8a3ab9;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00acee;
+}
+.footerCol2 p{
+    margin-bottom: 0px;
+}
+
+@media all and (max-width: 878px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    nav li{
+        flex-basis:30%;
+    }
+    .cardContent{
+        grid-template: repeat(1, 1fr) / repeat(1, 30% 65%);
+        display: grid;
+        grid-gap: 5%;
+        font-family: 'Enriqueta', serif;
+    }
+    .cardImg{
+        align-self: center;
+        justify-self: center;
+    }
+    .cardContentContact{
+        grid-template: repeat(1, 1fr) / repeat(1, 30% 65%);
+        display: grid;
+        grid-gap: 5%;
+    }
+    
+}
+@media all and (min-width: 879px){
+    .cardContent{
+        grid-template: repeat(1, 1fr) / repeat(1, 20% 75%);
+        display: grid;
+        grid-gap: 5%;
+        font-family: 'Enriqueta', serif;
+    }
+    .cardImg{
+        align-self: center;
+        justify-self: center;
+    }
+    .ourimg{
+        width: 160px;
+        height: 160px;
+    }
+    .cardContentContact{
+        grid-template: repeat(1, 1fr) / repeat(1, 30% 65%);
+        display: grid;
+        grid-gap: 5%;
+        padding-left: 5%;
+    }
+
+@media all and (max-width: 1119px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    nav li{
+        flex-basis:30%;
+    }
+}
+@media all and (min-width:1120px){
+    .wrapperGrid{
+        grid-template: repeat(1, 1fr) / repeat(1, 49% 49%);
+        display: grid;
+        grid-gap: 2%;
+    }
+    .header-flex{
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    nav{
+        flex-direction: row;
+        clear: both;
+    }
+    nav ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: rgb(247, 180, 57);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav li{
+        font-size: 17px;
+        display: inline-block;
+        position: relative;
+        margin:auto;
+    }
+    nav li a{
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        width: 100px;
+    }
+    nav li:hover .submenu {
+        display: block;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        padding: 0;
+    }
+    .submenu li {
+        display: block;
+    }
+    .submenu li a {
+        text-align: center;
+        display: block;
+    }
+    .cardContent{
+        grid-template: repeat(1, 1fr) / repeat(1, 20% 75%);
+        display: grid;
+        grid-gap: 5%;
+        padding-left: 5%;
+        font-family: 'Enriqueta', serif;
+    }
+    .cardContentContact{
+        grid-template: repeat(1, 1fr) / repeat(1 30% 65%);
+        display: grid;
+        grid-gap: 5%;
+    }
+    footer{
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        display: grid;
+        grid-gap: 5%;      
+    }
+    .footerCol2{
+        justify-self: center;
+        align-self: center;
+    }
+    .footerCol1{
+        justify-self: center;
+        align-self: center;
+    }
+    .reason1{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+        display: grid;
+    }
+    .reason1 h2{
+        justify-self: center;
+        align-self: center;
+    }
+    .insideR1{
+        grid-template: repeat(1, 1fr) / repeat(1, 53% 45%);
+        display: grid;
+        grid-gap: 2%;
+    }
+    .insideR1 p{
+        font-family: 'Enriqueta', serif;
+        font-size: 120%;
+        justify-self: flex-end;
+        align-self: center;
+    }
+    .insideR1 img{
+        width: 100%;
+    }
+    .reason2{
+        grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+        display: grid;
+    }
+    .reason2 h2{
+        justify-self: center;
+        align-self: center;
+    }
+    .insideR2{
+        grid-template: repeat(1, 1fr) / repeat(1, 53% 45%);
+        display: grid;
+        grid-gap: 2%;
+    }
+    .insideR2 p{
+        font-family: 'Enriqueta', serif;
+        font-size: 120%;
+        justify-self: flex-end;
+        align-self: center;
+        order: 1;
+    }
+    .insideR2 img{
+        width: 100%;
+    }
+    .examples{
+        grid-template: repeat(1, 48% 48%) / repeat(1, 48% 48%);
+        display: grid;
+        grid-gap: 4%;
+    }
+    .insideEx{
+        grid-template: repeat(1, 80% 15% ) / repeat(1, 60% 35%);
+        display: grid;
+        grid-gap: 1%;
+        margin-bottom: 10%;
+    }
+    .insideEx a{
+        justify-self: center;
+    }
+    .insideEx img{
+        justify-self: center;
+        align-self: center;
+    }
+    .example1 p{
+        margin: 0%;
+        justify-self: flex-start;
+        align-self: center;
+    }
+    dialog{
+        width: 40%;
+    }
+    dialog p{
+        padding: 3%;
+        text-align: center;
+    }
+}
+}

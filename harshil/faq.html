@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Veterinary Clinics
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/DogIcon.ico" />
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-flex">
+                <div class="header-column">
+                    <a href="../igor/Project/index.html"><img class="petbyus-logo" src="images/logo.jpg" alt="petbyus logo"></a>
+                </div>
+                <div class="header-column">
+                    <div>
+                        <form role="search">
+                            <input type="text" placeholder="Search.." class="headerSearch">
+                    </div>
+                </div>
+                <div class="header-column">
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="signup.html">Sign In</a></li>
+                            <li><a href="login.html">Log In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- script start -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+
+
+                var acc = document.getElementsByClassName("accordion");
+                var panel = document.getElementsByClassName('panel');
+
+                for (var i = 0; i < acc.length; i++) {
+                    acc[i].onclick = function () {
+                        var setClasses = !this.classList.contains('active');
+                        setClass(acc, 'active', 'remove');
+                        setClass(panel, 'show', 'remove');
+
+                        if (setClasses) {
+                            this.classList.toggle("active");
+                            this.nextElementSibling.classList.toggle("show");
+                        }
+                    }
+                }
+
+                function setClass(els, className, fnName) {
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].classList[fnName](className);
+                    }
+                }
+
+            });
+        </script>
+        <!-- End of script -->
+        <nav> 
+            <ul>
+                <li><a href="../igor/Project/index.html">Home</a></li>
+                <li><a href="../igor/Project/About.html">About</a></li>
+                <li><a href="../zahra/project/breeds.html">Breeds</a></li>
+                <li><a href="../igor/Project/Adoption.html">Adoption</a></li>
+                <li><a href="volunteer.html">Volunteering</a></li> 
+                <li><a href="../juliana/cases.htmls">Success Cases</a></li>
+                <li>
+                    <a href="#">Adoptables</a>
+                    <ul class="submenu">
+                        <li><a href="../juliana/adoptables.html">Adoptable 1</a></li>
+                        <li><a href="../juliana/adoptable2.html">Adoptable 2</a></li>
+                        <li><a href="../zahra/project/adoptable3.html">Adoptable 3</a></li>
+                        <li><a href="../zahra/project/adoptable4.html">Adoptable 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="../zahra/project/animal-care.html">Animal Care</a>
+                    <ul class="submenu">
+                        <li><a href="veterinary.html">Veterinary Clinics</a></li>
+                        <li><a href="insurance.html">Pet Insurance</a></li>
+                        <li><a href="../juliana/treats.html">Dog Treats</a></li>
+                        <li><a href="../zahra/project/Training.html">Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="../igor/Project/Contact.html">Contact</a>
+                    <ul class="submenu">
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="images/faq.jpg" alt="page banner">
+        </div>
+    </header>
+    <div class="wrapper">
+        <main>
+            <header class="row tm-welcome-section">
+                <h2 class="col-12 text-center tm-section-title">
+                    Adoption FAQs</h2>
+                <p class="col-12 text-center">We look forward to helping you find your forever friend. To help you
+                    through this process we have provided some Frequently Asked Questions !!</p>
+            </header>
+            
+            <div class="faq">
+                <h3>FAQs</h3>
+
+                <p class="accordion">Q1. I’m allergic, can I still have a pet?</p>
+                <div class="panel">A. It depends on the severity of your allergies and what your doctor recommends.
+                    There are some canine breeds that are less likely to cause an allergic reaction than others.</div>
+
+                <p class="accordion">Q2. Are shelter animals well-adjusted?</p>
+                <div class="panel">A. Even with the best-behaved animal, you should expect a period of adjustment as
+                    your pet becomes used to its new home, family, and routine. No animal, no matter where it comes
+                    from, is problem-free or comes with a health and behavior guarantee, but if you’re prepared to
+                    provide your new family pet with some time, training, and patience, your reward will be a loving
+                    friend and companion.</div>
+
+                <p class="accordion">Q3.I am interested in adopting an animal listed on your website. Who do I contact
+                    for more information?</p>
+                <div class="panel">A.We have many animals available for adoption and receive many inquiries about these
+                    pets. You can fill out an application right from our web site for the animal you found right from
+                    their profile page. Or, if you live in the area, we suggest that you come down and visit us.If you
+                    have a specific question that you would like answered prior to coming to see us, please email us at
+                    petbyus@gmail.com or call us on 437-230-0016.</div>
+
+                <p class="accordion">Q4.How does adoption work?</p>
+                <div class="panel">A. If you are interested in adopting an animal, you first must fill out an
+                    application. An adoption counselor will look over the application and verify any information with
+                    landlords, past/present veterinarians, and also do a background check. In most cases, we will
+                    require any potential adopters to meet and interact with the animal before putting it on hold.
+                    Adoptions generally take approximately 24-48 hours. We rarely allow an animal to go home the same
+                    day. It is important to remember that we may have multiple applications for one animal, and our goal
+                    is to match the animal with the best fit for them.</div>
+
+                <p class="accordion">Q5.I live out of town. Can you ship an animal to me?</p>
+                <div class="panel">A.We do not ship animals. If you live out of town, we are more than willing to allow
+                    you to adopt if you can make the trip to Quincy to meet the animal. In some cases, you may fax your
+                    adoption application to us and we can complete an interview over the phone so we may place an animal
+                    on hold to give you time to travel.</div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footerCol1">
+            <p>Copyright &copy; 2019 Team №3 ITS Humber College<br>
+                <a href="mailto:harshilgmail.com">harshil.mevasa@gmail.com</a></p>
+        </div>
+        <div class="footerCol2">
+            <p>Follow us in social media:</p>
+            <a href="https://www.instagram.com/adoptapetcom/"><i class="fa fa-instagram fa-2x"
+                    style="margin-right: 10px;"></i></a>
+            <a href="https://www.facebook.com/Adoptapetcom/"><i class="fa fa-facebook fa-2x"
+                    style="margin-right:10px;"></i></a>
+            <a href="https://twitter.com/adoptapetcom"><i class="fa fa-twitter fa-2x"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
