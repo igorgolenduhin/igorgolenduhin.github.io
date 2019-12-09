@@ -87,9 +87,9 @@ $( document ).ready( function() {    //When the document is ready, do this funct
 
         $("#adoptable2-img").html("<img class='adoptable-img' src='images/adoptable2.jpg' alt='adoptable 2 image'>");
 
-        $("#adoptable3-img").html("<img class='adoptable-img' src='zahra/project/images/adoptable3.jpg' alt='adoptable 3 image'>");
+        $("#adoptable3-img").html("<img class='adoptable-img' src='../zahra/project/images/adoptable3.jpg' alt='adoptable 3 image'>");
 
-        $('#adoptable4-img').html("<img class='adoptable-img' src='zahra/project/images/adoptable4.jpg' alt='adoptable 4 image'>");
+        $('#adoptable4-img').html("<img class='adoptable-img' src='../zahra/project/images/adoptable4.jpg' alt='adoptable 4 image'>");
 
         $('#donate-banner').html("<img src='images/donatebanner1.jpg' alt='donate banner'>");
     }
