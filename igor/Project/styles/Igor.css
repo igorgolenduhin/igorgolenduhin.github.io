@@ -340,6 +340,7 @@ footer p a:link{
         grid-gap: 5%;
         padding-left: 5%;
     }
+}
 
 @media all and (max-width: 1119px){
     nav ul{
@@ -498,12 +499,4 @@ footer p a:link{
         justify-self: flex-start;
         align-self: center;
     }
-    dialog{
-        width: 40%;
-    }
-    dialog p{
-        padding: 3%;
-        text-align: center;
-    }
-}
 }
