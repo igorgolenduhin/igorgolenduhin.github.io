@@ -1,0 +1,67 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2.5%;
+    background-color: #27292D;
+    color: #F5F2F3;
+}
+
+@media all and (min-width: 500px){
+    #header{
+        grid-template: repeat(1, 50% 30% 25%)/ repeat(1, 1fr);
+        display: grid;
+        grid-gap: 5%;
+        margin-bottom: 7%;
+    }
+    #header h2{
+        font-size: 7ex;
+        text-align: center;
+    }
+    #header input{
+        font-size: 6ex;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 1em;
+        padding-left: 2%;
+    }
+    #header button{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 5ex;
+        font-weight: bold;
+        border-radius: 2em;
+        background-color: #3F99E9;
+        border-color: black;
+    }
+    #header button:hover{
+        background-color: #1F76C3;
+    }
+    #logo{
+        padding: 5% 0;
+        border-radius: 2em;
+        margin: 0 10%;
+    }
+    #logo img{
+        display: block;
+        margin: 0 auto;
+        min-height: 150px;  
+    }
+    #info{
+        text-align: center;
+        padding: 7%;
+    }
+    #descr{
+        padding: 0 0 5%;
+    }
+    #dataEPS{
+        padding: 0 0 5%;
+    }
+    #incomeSt, #balance{
+        text-align: center;
+    }
+    table{
+        margin: 0 auto;
+    }
+    tbody{
+        font-size: 3ex;
+    }
+}
