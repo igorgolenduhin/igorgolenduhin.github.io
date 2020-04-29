@@ -42,10 +42,11 @@ function myFunction(json) {
     dividMoney = profile.lastDiv;
     changes = profile.changes;
     changesPer = profile.changesPercentage;
+    linkSite = profile.website;
 
-    logo = "<img src= '" + imageCom + "' alt = 'Logo'>";
+    logo = "<a href='" + linkSite + "'><img src= '" + imageCom + "' alt = 'Logo'>";
     document.getElementById("logo").innerHTML = logo;
-    document.getElementById("logo").style = 'background-color: white';
+    document.getElementById("logo").style = 'background-color: #F5F2F3';
 
     profileRes = "<h3 id='cName'>" + comName + " (" + symbol + ")" + "</h3>";
     profileRes += "<h3 >Биржа: " + exchange + "</h3>";
