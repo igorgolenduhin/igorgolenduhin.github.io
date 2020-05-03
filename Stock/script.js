@@ -122,6 +122,7 @@ function drawChartLine(json) {
 
     var optionsLine = {
         width: 850,
+        height: 500,
         hAxis: {
           title: 'Дата'
         },
@@ -215,6 +216,7 @@ function drawChart(json) {
     ]);
     var options = {
         width: 850,
+        height: 500,
         title: 'Баланс компании',
         hAxis: { title: 'Год' },
         vAxis: { title: 'Млн $' }
