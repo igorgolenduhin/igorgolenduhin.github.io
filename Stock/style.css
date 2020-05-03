@@ -62,12 +62,16 @@ body{
     }
     #incomeSt, #balance{
         text-align: center;
+        padding-bottom: 3%;
     }
     table{
         margin: 0 auto;
     }
     tbody{
         font-size: 3ex;
+    }
+    #balanceDiagram, #incomeDiagram{
+        margin: 0 3%;
     }
 }
 @media all and (min-width: 1280px){
@@ -131,6 +135,7 @@ body{
     }
     #incomeSt, #balance{
         text-align: center;
+        padding-bottom: 3%;
     }
     #incomeSt h4, #balance h4{
         font-size: 4ex;
@@ -140,5 +145,8 @@ body{
     }
     tbody{
         font-size: 3ex;
-    }    
+    } 
+    #balanceDiagram, #incomeDiagram{
+        margin: 0 15%;
+    }   
 }

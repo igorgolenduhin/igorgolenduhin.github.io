@@ -8,6 +8,17 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>Information about stocks</title>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load("current", { 'packages': ['corechart', 'line'] });
+        google.charts.setOnLoadCallback(drawChartLine);
+    </script>
+    <script>
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+    </script>
+</head>
+
 <body>
     <div id="header">
         <h2>Введите тикер</h2>
@@ -22,7 +33,12 @@
         <div id="EPS"></div>
     </div>
     <div id="incomeSt"></div>
+
+    <div id="incomeDiagram"></div>
+
     <div id="balance"></div>
+
+    <div id="balanceDiagram"></div>
 
 
 </body>

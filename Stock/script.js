@@ -11,11 +11,14 @@ function loadDoc() {
     xhttp2.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             myFunctionTwo(this);
+            drawChartLine(this);
         }
     };
     xhttp3.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             myFunctionThree(this);
+            drawChart(this);
+
         }
     };
 
@@ -96,6 +99,41 @@ function myFunctionTwo(json) {
 
     document.getElementById("incomeSt").innerHTML = incomeSt;
 }
+
+function drawChartLine(json) {
+    jsonDoc = json.responseText;
+    comProfile = JSON.parse(jsonDoc);
+
+    keyIncome = 'Net Income';
+
+    var dataLine = new google.visualization.DataTable();
+    dataLine.addColumn('string', 'Дата');
+    dataLine.addColumn('number', 'Чистая прибыль');
+
+    dataLine.addRows([
+        [comProfile.financials[6].date, comProfile.financials[6][keyIncome]/1000000],
+        [comProfile.financials[5].date, comProfile.financials[5][keyIncome]/1000000],
+        [comProfile.financials[4].date, comProfile.financials[4][keyIncome]/1000000],
+        [comProfile.financials[3].date, comProfile.financials[3][keyIncome]/1000000],
+        [comProfile.financials[2].date, comProfile.financials[2][keyIncome]/1000000],
+        [comProfile.financials[1].date, comProfile.financials[1][keyIncome]/1000000],
+        [comProfile.financials[0].date, comProfile.financials[0][keyIncome]/1000000]
+    ]);
+
+    var optionsLine = {
+        width: 850,
+        hAxis: {
+          title: 'Дата'
+        },
+        vAxis: {
+          title: 'Чистая прибыль (млн)'
+        }
+      };
+
+    var chart = new google.visualization.LineChart(document.getElementById('incomeDiagram'));
+    chart.draw(dataLine, optionsLine);
+}
+
 function myFunctionThree(json) {
     jsonDoc = json.responseText;
     comProfile = JSON.parse(jsonDoc);
@@ -131,4 +169,56 @@ function myFunctionThree(json) {
     }
     balanceSheet += "</tr></table>";
     document.getElementById("balance").innerHTML = balanceSheet;
+}
+
+function drawChart(json) {
+    jsonDoc = json.responseText;
+    comProfile = JSON.parse(jsonDoc);
+
+    key = 'Total assets';
+    balanceAssets0 = comProfile.financials[0][key] / 1000000;
+    balanceAssets1 = comProfile.financials[1][key] / 1000000;
+    balanceAssets2 = comProfile.financials[2][key] / 1000000;
+    balanceAssets3 = comProfile.financials[3][key] / 1000000;
+    balanceAssets4 = comProfile.financials[4][key] / 1000000;
+    balanceAssets5 = comProfile.financials[5][key] / 1000000;
+    balanceAssets6 = comProfile.financials[6][key] / 1000000;
+
+    keyLia = 'Total liabilities';
+    balanceLiabilities0 = comProfile.financials[0][keyLia] / 1000000;
+    balanceLiabilities1 = comProfile.financials[1][keyLia] / 1000000;
+    balanceLiabilities2 = comProfile.financials[2][keyLia] / 1000000;
+    balanceLiabilities3 = comProfile.financials[3][keyLia] / 1000000;
+    balanceLiabilities4 = comProfile.financials[4][keyLia] / 1000000;
+    balanceLiabilities5 = comProfile.financials[5][keyLia] / 1000000;
+    balanceLiabilities6 = comProfile.financials[6][keyLia] / 1000000;
+
+
+    keyShareholders = 'Total shareholders equity';
+    balanceShareholders0 = comProfile.financials[0][keyShareholders] / 1000000;
+    balanceShareholders1 = comProfile.financials[1][keyShareholders] / 1000000;
+    balanceShareholders2 = comProfile.financials[2][keyShareholders] / 1000000;
+    balanceShareholders3 = comProfile.financials[3][keyShareholders] / 1000000;
+    balanceShareholders4 = comProfile.financials[4][keyShareholders] / 1000000;
+    balanceShareholders5 = comProfile.financials[5][keyShareholders] / 1000000;
+    balanceShareholders6 = comProfile.financials[6][keyShareholders] / 1000000;
+
+    var data = google.visualization.arrayToDataTable([
+        ['Год', 'Активы', 'Обязательства', 'Акционерный капитал'],
+        [comProfile.financials[6].date, balanceAssets6, balanceLiabilities6, balanceShareholders6],
+        [comProfile.financials[5].date, balanceAssets5, balanceLiabilities5, balanceShareholders5],
+        [comProfile.financials[4].date, balanceAssets4, balanceLiabilities4, balanceShareholders4],
+        [comProfile.financials[3].date, balanceAssets3, balanceLiabilities3, balanceShareholders3],
+        [comProfile.financials[2].date, balanceAssets2, balanceLiabilities2, balanceShareholders2],
+        [comProfile.financials[1].date, balanceAssets1, balanceLiabilities1, balanceShareholders1],
+        [comProfile.financials[0].date, balanceAssets0, balanceLiabilities0, balanceShareholders0]
+    ]);
+    var options = {
+        width: 850,
+        title: 'Баланс компании',
+        hAxis: { title: 'Год' },
+        vAxis: { title: 'Млн $' }
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById('balanceDiagram'));
+    chart.draw(data, options);
 }
