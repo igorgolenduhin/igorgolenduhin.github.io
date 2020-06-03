@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
-@media all and (max-width: 1279px){
+@media all and (max-width: 1023px){
     *{
         margin: 0;
         padding: 0;
@@ -8,7 +8,7 @@
     body{
         background-color: #24272E;
         font-family: Asap, sans-serif;
-        font-size: 300%;
+        font-size: 240%;
     }
     header{
         background: white;
@@ -112,7 +112,7 @@
         box-shadow: 0 0 10px #25292b; 
     }
 }
-@media all and (min-width: 1280px){
+@media all and (min-width: 1024px){
 *{
     margin: 0;
     padding: 0;
