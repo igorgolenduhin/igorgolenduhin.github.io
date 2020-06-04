@@ -22,11 +22,11 @@ function loadDoc() {
         }
     };
 
-    xhttp1.open("GET", "https://financialmodelingprep.com/api/v3/company/profile/" + ticker, false);
+    xhttp1.open("GET", "https://financialmodelingprep.com/api/v3/company/profile/" + ticker +"?apikey=cd5d3cac14dd77de2432e45986e5d7a4", false);
     xhttp1.send();
-    xhttp2.open("GET", "https://financialmodelingprep.com/api/v3/financials/income-statement/" + ticker, false);
+    xhttp2.open("GET", "https://financialmodelingprep.com/api/v3/financials/income-statement/" + ticker+"?apikey=cd5d3cac14dd77de2432e45986e5d7a4", false);
     xhttp2.send();
-    xhttp3.open("GET", "https://financialmodelingprep.com/api/v3/financials/balance-sheet-statement/" + ticker, false);
+    xhttp3.open("GET", "https://financialmodelingprep.com/api/v3/financials/balance-sheet-statement/" + ticker+"?apikey=cd5d3cac14dd77de2432e45986e5d7a4", false);
     xhttp3.send();
 
 }
