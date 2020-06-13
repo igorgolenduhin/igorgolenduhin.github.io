@@ -65,5 +65,5 @@ img{
     height: 100%;
 }
 .cardholder{
-    will-change: auto ;
+    will-change: transform;
 }
