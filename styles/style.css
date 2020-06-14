@@ -234,7 +234,7 @@ header h1{
         left: 0%;
     }
     .stock{
-        font-size: 30px;
+        font-size: 36px;
         position: absolute;
         top: 90%;
         width: 30%;
@@ -243,13 +243,7 @@ header h1{
         border-radius: 1em;
         background-color:  #ff5050;
         color: rgb(228, 220, 220);
-    }
-    .stock:focus{
-        outline: none;
-    }
-    .stock:hover{
-        background-color: #ce1111;
-        color: white;
+        text-align: center;
     }
     a, a:visited, a:link{
         text-decoration: none;
@@ -271,20 +265,23 @@ header h1{
         padding: 20px;
         border-color: indianred;
     }
-    #RSPButton{
-        font-size: 30px;
+    .buttonHref{
         width: 30%;
+        left: 35%;
         border: none;
-        border-radius: 1em;
+        border-radius: 3em;
         background-color:  #ff5050;
-        color: rgb(228, 220, 220);
+        text-align: center;
     }
-    #RSPButton:focus{
+    #RSPButton{
+        font-size: 36px;
+        color: rgb(228, 220, 220);  
+    }
+    .buttonHref:focus{
         outline: none;
     }
-    #RSPButton:hover{
-        background-color: #ce1111;
-        color: white;
+    .buttonHref:hover{
+        opacity: 0.8;
     }
     .rockL{
         transform: rotateY(180deg);
@@ -600,9 +597,6 @@ header h1{
         background-color:  #ff5050;
         color: rgb(228, 220, 220);
     }
-    .stock:focus{
-        outline: none;
-    }
     a, a:visited, a:link{
         text-decoration: none;
         color: rgb(228, 220, 220);
@@ -623,17 +617,23 @@ header h1{
         padding: 10px;
         border-color: indianred;
     }
-    #RSPButton{
-        font-size: 5em;
+    .buttonHref{
         width: 70%;
         left: 15%;
         border: none;
-        border-radius: 1em;
+        border-radius: 3em;
         background-color:  #ff5050;
-        color: rgb(228, 220, 220);
+        text-align: center;
     }
-    #RSPButton:focus{
+    #RSPButton{
+        font-size: 5em;
+        color: rgb(228, 220, 220);  
+    }
+    .buttonHref:focus{
         outline: none;
+    }
+    .buttonHref:hover{
+        opacity: 0.8;
     }
     .hands{
         width: 100%;
