@@ -11,10 +11,26 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">
+            <h2>MY PRACTICE</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#petbyus">PetByUs</a></li>
+            <li><a href="#stocks">Stock App</a></li>
+            <li><a href="#RSPGame">Rock, scissors, paper</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
     <header>
-        <h1>My practice</h1>
+        <h1>Igor Golendukhin</h1>
     </header>
-    <section class="petbyus">
+    <section id="petbyus" class="petbyus">
         <a href="igor/Project/index.html">
             <svg id="logoPetByUs" width="1246" height="114" viewBox="0 0 1246 114" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -95,11 +111,11 @@
             </div>
         </a>
     </section>
-    <section class="animation">
+    <section id="stocks" class="animation">
         <img class="paper-plane" src="/pictures/paper_plane.png" alt="plane">
         <button id="stock" class="stock"><a href="/Stock/index.html">Stock Application</a></button>
     </section>
-    <section class="RSP">
+    <section id="RSPGame" class="RSP">
         <h1>Rock, paper, scissors game</h1>
         <div class="hands">
             <img class="rockL" src="/pictures/rock.png" alt="rock Left">
@@ -107,14 +123,10 @@
         </div>
         <button id="RSPButton"><a href="/RSP_Game/index.html"> Try it!</a></button>
     </section>
-    <section class="navigation">
-        <h1>Navigation for smartphone</h1>
-        <a href="/navigation/index.html"><span>Let`s see it!</span></a>
-    </section>
 
     <!--<a href="/Memory_game/index.html">Small memory game</a> -->
 
-    <footer>
+    <footer id="contacts">
         <h1>That`s all. Thank you!</h1>
         <div>
             <div class="socialMedia">
@@ -142,4 +154,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"
         integrity="sha256-dER4oK6DpzhXzvohNcU0SRXMVUde/UEg1+mj5EIVkIg=" crossorigin="anonymous"></script>
     <script src="/scripts/script-plane.js"></script>
+    <script src="scripts/script_nav.js"></script>
 </body>
